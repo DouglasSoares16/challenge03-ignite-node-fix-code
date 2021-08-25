@@ -52,7 +52,7 @@ app.delete("/repositories/:id", (request, response) => {
 
   if (repositoryIndex < 0) {
     return response.status(404).json({ error: "Repository not found" });
-  }// suites 1 - test - 8
+  }
 
   repositories.splice(repositoryIndex, 1);
 
